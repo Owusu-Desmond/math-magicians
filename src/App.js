@@ -1,21 +1,36 @@
 import React from 'react';
-import logo from './logo.jpg';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Nav from './components/nav';
 import './App.css';
-import Calculator from './components/Calculator';
+import Calculator from './pages/Calculator';
+import Home from './pages/home';
+import Quotes from './pages/quotes';
+import Footer from './components/footer';
 
 class App extends React.PureComponent {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <nav>
-            <img src={logo} className="App-logo" alt="logo" />
-          </nav>
-        </header>
+      <BrowserRouter>
+        <Nav />
         <main>
-          <Calculator />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/calculator" element={<Calculator />} />
+            <Route path="/quotes" element={<Quotes />} />
+          </Routes>
         </main>
-      </div>
+        <Footer />
+      </BrowserRouter>
+      // <div className="App">
+      //   <header className="App-header">
+      //     <nav>
+      //       <img src={logo} className="App-logo" alt="logo" />
+      //     </nav>
+      //   </header>
+      //   <main>
+      //     <Calculator />
+      //   </main>
+      // </div>
     );
   }
 }
