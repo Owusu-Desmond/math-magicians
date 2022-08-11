@@ -13,6 +13,10 @@ Math magicians is a web application that is use for calculations.
 
 - Libraries
   - [x] React
+  
+## Screenshot
+
+https://user-images.githubusercontent.com/92303891/184040347-b72c45de-3b9e-4e57-a663-bc92290ce69d.mp4
 
 ## Live Demo Link
 
