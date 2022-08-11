@@ -21,7 +21,7 @@ https://user-images.githubusercontent.com/92303891/184040347-b72c45de-3b9e-4e57-
 ## Live Demo Link
 
 Access the the online version of my application with this link
-[Live Demo](https://owusu-desmond.github.io/math-magicians/)
+[Live Demo](https://math-magicians-01.netlify.app)
 
 
 ## Getting Started
